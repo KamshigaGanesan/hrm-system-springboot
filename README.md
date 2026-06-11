@@ -2,15 +2,16 @@
 
 ## Overview
 
-This project is a Human Resource Management System (HRM) backend application developed using Java Spring Boot and PostgreSQL. The system provides RESTful APIs for managing employees and HR-related operations.
+The Human Resource Management System (HRM) is a backend application developed using Java Spring Boot and PostgreSQL. This project provides RESTful APIs for managing employee-related information and HR operations. The system demonstrates backend development concepts such as CRUD operations, database integration, and API testing.
 
 ## Technologies Used
 
 * Java
 * Spring Boot
 * PostgreSQL
-* Maven
+* Gradle
 * Spring Data JPA
+* REST APIs
 * Postman
 * Git & GitHub
 
@@ -18,42 +19,72 @@ This project is a Human Resource Management System (HRM) backend application dev
 
 * Employee Management
 * Create Employee Records
-* View Employee Details
+* Retrieve Employee Details
 * Update Employee Information
 * Delete Employee Records
 * RESTful API Development
 * Database Integration with PostgreSQL
 * API Testing using Postman
+* Spring Data JPA Integration
 
 ## Project Structure
 
-src/main/java - Java source files
-
-src/main/resources - Application configuration
-
-pom.xml - Maven dependencies
+```text
+src/main/java       - Java source code
+src/main/resources  - Application configuration files
+build.gradle        - Gradle dependencies and build configuration
+```
 
 ## Installation
 
-1. Clone the repository
+### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/KamshigaGanesan/hrm-system-springboot.git
 ```
 
-2. Configure PostgreSQL database
+### Configure Database
 
-3. Update application.properties
+1. Create a PostgreSQL database.
+2. Update the database configuration in `application.properties`.
 
-4. Run the application
+Example:
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/hrm_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
+
+### Run the Application
+
+For Windows:
 
 ```bash
-mvn spring-boot:run
+gradlew.bat bootRun
+```
+
+For Linux/Mac:
+
+```bash
+./gradlew bootRun
 ```
 
 ## API Testing
 
-All APIs were tested successfully using Postman.
+All REST APIs were tested successfully using Postman.
+
+## Learning Outcomes
+
+This project helped in gaining practical experience with:
+
+* Spring Boot Development
+* RESTful API Design
+* PostgreSQL Database Integration
+* Spring Data JPA
+* CRUD Operations
+* Backend Application Development
+* Git and GitHub Version Control
 
 ## Future Enhancements
 
@@ -64,5 +95,18 @@ All APIs were tested successfully using Postman.
 * Payroll Management
 * Frontend Integration
 * Docker Deployment
+* Cloud Deployment
 
+## Project Status
+
+✅ Backend Development Completed
+
+✅ PostgreSQL Database Integration Completed
+
+✅ REST APIs Tested Using Postman
+
+🚀 Ready for Future Enhancements
+
+## Author
+**Kamshiga Ganesan**
 
